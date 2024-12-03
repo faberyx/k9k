@@ -15,4 +15,7 @@ AA-DPF Last Regen,Last Reg,222487,(A*256+B)/600,0,100,Min,7E0,x1
 AA-Time from Regen,Time Reg,222488,(A*256+B)/3600,0,18,H,7E0,x1
 AA-Km from last Regen,KM Reg,2224A9,A*65536+B*256+C,0,100000,Km,7E0,x1
 AA-DPF Pressuew, Dpf pres,222542,(A*256+B)-32768,-32768,32768,mBar,7E0,x1
-AA-DP InjeF,Dpf Inj,222826,(A*256+B)/100,0,600,%,7E0,x1
+AA-DPF Inj,Dpf Inj,222826,(A*256+B)/100,0,600,%,7E0,x1
+AA-DPF Motor Oil,Dpf Oil,222826,(1.0*((A*256+B)))/655,0,600,%,7E0,x1
+AA-Battery Charge,Batt,222958,0.5*A,0,0,%,7E0,x1
+AA-Turbo Charge,Batt,222958,(A*256+B),0,0,mbar,7E0,x1
