@@ -29,7 +29,6 @@ AA-Turbo Charge,Batt,222958,(A*256+B),0,0,mbar,7E0,x1
 "BB-DPF_Temperature_Before_DPF","DPF_TempBeforeDPF","222432","(1.0*((A*256+B)-2730))/10","0","0","°C",7E0,x1
 "BB-DPF_Time_Since_Last_Regeneration","DPF_TimeSinceLastRegen","222488","(1.0*(A*256+B))/3600","0","0","h",7E0,x1
 "BB-DPF_Time_Since_Last_Regeneration","DPF_TimeSinceLastRegen","222488","(1.0*(A*256+B))/3600","0","0","h",7E0,x1
-"BB-ECM_Ambient_Air_Temp","OutsideTemp","22200c","C-40",-40,215,"C","743","","",1,60000
 "BB-ECM_Coolant_Pressure","Coolant_Pressure","22222A","(1.0*((A*256+B)))/10","0","0","bar",7E0,x1
 "BB-ECM_Coolant_Temperature","Coolant_Temp","222001","(1.0*((A*256+B)-2730))/10","0","0","C",7E0,x1
 "BB-ECM_Coolant_Temperature_Sensor_Voltage","Coolant_Temp_Sensor_V","22FD8B","(1.0*((A*256+B)))/6553.6","0","0","V",7E0,x1
