@@ -19,3 +19,37 @@ AA-DPF Inj,Dpf Inj,222826,(A*256+B)/100,0,600,%,7E0,x1
 AA-DPF Motor Oil,Dpf Oil,222826,(1.0*((A*256+B)))/655,0,600,%,7E0,x1
 AA-Battery Charge,Batt,222958,0.5*A,0,0,%,7E0,x1
 AA-Turbo Charge,Batt,222958,(A*256+B),0,0,mbar,7E0,x1
+"BB-ABS_Brake_Pedal_State","Brake","22200F","(A&15)","0","2","","7E0","","",1,0
+"BB-ABS_Parking_Brake_State","Parking_Brake","22222B","{A:0}","0","1","","7E0","","",1,0
+"BB-BMS_Battery_Voltage","Battery_Voltage","222006","(A*256+B)/1000","0","0","V","743","","",1,0
+"BB-Cluster_Total_Distance_Traveled","Odometer","222006","(A*65536+B*256+C)","0","0","km","7E0","","",1,0
+"BB-Custom_Instant_Fuel_Consumption","Instant_Consumption","","AVG(10:(LOOKUP([0D]:100/[ff1203]:0~30=0)))",0,100,"","","","",1,0
+"BB-DPF_Differential_Pressure","DPF_Diff_Pressure","222542","(A*256+B)-32768","0","0","mbar","7E0","","",1,0
+"BB-DPF_Passage_Of_Oxygen_ThroughTheDPF","DPF_OxygenVolume","222447","(1.0*((A*256+B)))/10","0","0","m3/h","7E0","","",1,0
+"BB-DPF_Temperature_Before_DPF","DPF_TempBeforeDPF","222432","(1.0*((A*256+B)-2730))/10","0","0","°C","7E0","","",1,0
+"BB-DPF_Time_Since_Last_Regeneration","DPF_TimeSinceLastRegen","222488","(1.0*(A*256+B))/3600","0","0","h","7E0","","",1,0
+"BB-DPF_Time_Since_Last_Regeneration","DPF_TimeSinceLastRegen","222488","(1.0*(A*256+B))/3600","0","0","h","7E0","","",1,0
+"BB-ECM_Ambient_Air_Temp","OutsideTemp","22200c","C-40",-40,215,"C","743","","",1,60000
+"BB-ECM_Coolant_Pressure","Coolant_Pressure","22222A","(1.0*((A*256+B)))/10","0","0","bar","7E0","","",1,0
+"BB-ECM_Coolant_Temperature","Coolant_Temp","222001","(1.0*((A*256+B)-2730))/10","0","0","C","7E0","","",1,0
+"BB-ECM_Coolant_Temperature_Sensor_Voltage","Coolant_Temp_Sensor_V","22FD8B","(1.0*((A*256+B)))/6553.6","0","0","V","7E0","","",1,0
+"BB-ECM_Cruise_Control_State","CC","22204C","LOOKUP((A&7):0:5=1)","0","1","","7E0","","",1,0
+"BB-ECM_Fuel Temperature","Fuel_Temp","222008","(1.0*((A*256+B)-2730))/10","0","0","C","7E0","","",1,0
+"BB-ECM_Fuel_Temperature_Sensor_Voltage","Fuel_Temp_Sensor_V","22FD89","(1.0*((A*256+B)))/6553.6","0","0","V","7E0","","",1,0
+"BB-ECM_Fuel_Level_Sensor_Resistor","FuelLevelResistor","222005","(A*256+B)","5","350","Ohm","743","","",1,0
+"BB-ECM_Fuel_Level_LT","FuelLevel_LT","222203","(A*2.56+B*0.01)/50*100","0","100","%","743","","",1,0
+"BB-ECM_Fuel_Level_ST","FuelLevel_ST","222201","(A*2.56+B*0.01)/50*100","0","100","%","743","","",1,0
+"BB-ECM_Speed_Limiter_State","SpeedLimit","22204C","LOOKUP((A&7):0:2=1)","0","1","","7E0","","",1,0
+"BB-HVAC_AC_State","AC","22201E","{A:0}","0","1","","","","",1,0
+"BB-HVAC_Air_Supply_Flow","AC_Flow","222413","(1.0*((A*256+B)))/10","0","0","mg/cp","7E0","","",1,0
+"BB-Transmission_Clutch_Position","Clutch","22222F","{A:0}","0","1","","7E0","","",1,0
+"BB-Transmission_Neutral_State","Neutral","22222E","(A&3)","0","1","","7E0","","",1,0
+"BB-Transmission_Reverse_Engaged","Reverse","222079","{A:1}","0","0","","7E0","","",1,0
+CC_Fuel Level,Fuel,012F,{A:0} * 100 / 255,0,100.0,%,7E0
+CC_DPF Temperature,DPF Temp,2211,{A:0} - 40,-40,1200.0,°C,7E0
+CC_DPF Pressure Differential,DPF Pressure,2230,{A:0} * 0.01,0,5.0,kPa,7E0
+CC_DPF Regeneration Status,Regen Status,2209,{A:0},0,1.0,Boolean,7E0
+CC_Soot Accumulation Level,Soot Level,220A,{A:0} * 0.01,0,50.0,g/L,7E0
+CC_Distance Since Last Regeneration,Regen Distance,220B,{A:0} * 10,0,5000.0,km,7E0
+
+
