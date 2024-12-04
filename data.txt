@@ -1,0 +1,2 @@
+2004 -> engine torque  between 20 and 40 Nm
+24ec	[PR932] Engine oil dilution rate ->  Up to 3.4 percent in diesel engines
