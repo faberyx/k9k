@@ -3,5 +3,5 @@ name,ShortName,ModeAndPID,Equation,Min Value,Max Value,Units,Header
 "11_DPF KM from last","DPF Km last","222554","(A*256+B+C)","0","0","KM","7E0"
 "11_DPF Km at replacement","DPF Km","2224BB","(A*65536+B*256+C)","0","0","km","7E0"
 "11_DPF Km at last successful regen","DPF Last ok","2224A9","(A*65536+B*256+C)","0","0","km","7E0"
-"11_DPF Mode","DPF Mode","222056","A&15",,0,100,,,x1
+"11_DPF Mode","DPF Mode","222056","A&15","0","0","","7E0"
  
