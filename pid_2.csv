@@ -1,0 +1,3 @@
+name,ShortName,ModeAndPID,Equation,Min Value,Max Value,Units,Header
+"11_Turbo temperature","Turbo temp","222439","(1.0*((A*256+B)-2730))/10","0","0","°C","7E0"
+"11_DPF KM from last","DPF Km last","222554","(A*256+B+C)","0","0","KM","7E0"
