@@ -6,4 +6,8 @@ name,ShortName,ModeAndPID,Equation,Min Value,Max Value,Units,Header
 "12_DPF Mode","DPF Mode","222056","A&15","0","0","","7E0"
 "12_DPF Regen started","Regen started","222166","{A:0}","0","0","","7E0"
 "12_Mass airflow rate","MAF","2224F2","(1.0*((A*256+B)))/10","0","0","kg/h","7E0"
-"12_Engine oil dilution rate","Oil dilution","222294","(1.0*(signed(A*16777216+B*65536+C*256+D)))/214748364.8","0","0","%","7E0"
+"12_Engine oil viscosity level","Oil viscosity","222294","(1.0*(signed(A*16777216+B*65536+C*256+D)))/214748364.8","0","0","%","7E0"
+"13_Refrigerant Pressure","Refr Press","22222A","(1.0*((A*256+B)))/10","0","0","bar","7E0"
+"13_Engine oil dilution rate","Oil dil rate","2224EC","(1.0*(signed(A*16777216+B*65536+C*256+D)))/1000000","0","0","%","7E0"
+
+ 
