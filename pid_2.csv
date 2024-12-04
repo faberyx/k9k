@@ -5,3 +5,4 @@ name,ShortName,ModeAndPID,Equation,Min Value,Max Value,Units,Header
 "11_DPF Km at last successful regen","DPF Last ok","2224A9","(A*65536+B*256+C)","0","0","km","7E0"
 "11_DPF Mode","DPF Mode","222056","A&15","0","0","","7E0"
 "11_DPF Regen started","Regen started","222166","{A:0}","0","0","","7E0"
+"11_Mass airflow rate","MAF","2224F2","(1.0*((A*256+B)))/10","0","0","kg/h","7E0"
