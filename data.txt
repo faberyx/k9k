@@ -1,1 +1,2 @@
  mega.nz/file/0AAxHSZJ#_CNAZn_Ro37wOqyRgUJ-BNJMaZqjN8k-civK9AmK868
+ api.gitkraken.dev/releases/production/win64/x64/9.11.0/gitkraken-9.11.0-full.nupkg
